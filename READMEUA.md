@@ -62,4 +62,31 @@
 .
 ├── monitor_cameras.py  # Основний скрипт
 ├── requirements.txt    # Список необхідних бібліотек
+├── dvr_config.json     # Список рейстраторів DVR
 └── README.md           # Цей файл README
+
+
+{
+    "Naftobaza": {
+        "type": "analog",
+        "ip": "11.11.11.11",
+        "port": 80,
+        "username": "admin",
+        "password": "admin",
+        "valid_camera_ids": [1, 2, 3, 4, 5, 6, 7, 8]
+    },
+    "Combi DVR 1": {
+        "type": "mixed",
+        "ip": "11.11.11.11",
+        "port": 80,
+        "username": "admin",
+        "password": "admin",
+        "valid_camera_ids": [1, 2, 3, 5, 6, 7]
+    },
+    "Combi DVR 2": {
+        "type": "ip",
+        "ip": "11.11.11.11",
+        "port": 81,
+        "username": "admin",
+        "password": "admin",
+    }
